@@ -328,20 +328,23 @@ a {
   text-align: center;
   color: rgba(18, 20, 23, 0.5);
   padding-bottom: 32px;
+  padding-left: 32px;
+  padding-left: 32px;
+  width: 245px;
 }
 .button-subtitle {
   white-space: nowrap;
   border-radius: 12px;
-  padding: 16px 39px;
+
   width: 256px;
   height: 60px;
   background-color: #4dc274;
-  padding: 16px 39px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 156%;
   color: #fff;
-  padding-bottom: 32px;
+
   margin-left: 32px;
   margin-right: 32px;
 }
