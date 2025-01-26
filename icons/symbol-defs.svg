@@ -16,5 +16,9 @@
     <symbol id="icon-figura" viewBox="0 0 99 32">
       <path d="M12.8 0h73.6c7.069 0 12.8 5.731 12.8 12.8v6.4c0 7.069-5.731 12.8-12.8 12.8h-73.6c-7.069 0-12.8-5.731-12.8-12.8v-6.4c0-7.069 5.731-12.8 12.8-12.8z"></path>
     </symbol>
+    <symbol id="icon-lebel" viewBox="0 0 32 32">
+      <path fill="#4dc274" style="fill: var(--color1, #4dc274)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+      <path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.2857" d="M23.619 10.286l-10.476 10.476-4.762-4.762"></path>
+    </symbol>
   </defs>
 </svg>
