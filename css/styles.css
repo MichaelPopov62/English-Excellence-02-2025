@@ -97,7 +97,7 @@ a {
 .social-list {
   display: flex;
   gap: 12px;
-
+  margin-left: auto;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -295,8 +295,6 @@ a {
   gap: 32px;
 }
 .lessons-item {
-  width: calc((100% - 64px) / 3);
-
   border: 1px solid #4dc274;
   border-radius: 30px;
   width: 320px;
@@ -330,10 +328,10 @@ a {
   padding-bottom: 32px;
   padding-left: 32px;
   padding-left: 32px;
-  width: 245px;
+  width: 256px;
+  height: 148px;
 }
 .button-subtitle {
-  white-space: nowrap;
   border-radius: 12px;
 
   width: 256px;
@@ -352,8 +350,21 @@ a {
 /*motivation*/
 
 .motivation {
+  background-image: linear-gradient(80deg, #4dc274 0%, #bee8cc 100%);
+  border-radius: 30px;
+  max-width: 1152px;
+  min-height: 950px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .motivation-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 117%;
+  color: #fff;
+  width: 776px;
+  height: 140px;
+  padding-bottom: 72px;
 }
 
 /*контейнер з картками*/
@@ -363,31 +374,85 @@ a {
 }
 .motivation-cards-center {
   position: absolute;
-  background-color: blue;
-  z-index: 3;
-  left: 50px;
+  background-color: #d4fde1;
+  z-index: 2;
+  transform: rotate(-8deg);
+  left: -75px;
+  border-radius: 30px;
+  width: 1049px;
+  height: 462px;
 }
 .motivation-cards-top {
   position: absolute;
-  background-color: #021609;
-  z-index: 2;
+  background-color: #fff;
+  z-index: 3;
   right: 50px;
+  border-radius: 30px;
+  width: 1023px;
+  height: 470px;
 }
-.motivation-cards-botton:nth-child(3) {
+.motivation-cards-botton {
   position: absolute;
-
   z-index: 1;
-  background-color: #131712;
+  background: rgba(255, 255, 255, 0.5);
+  width: 1010px;
+  height: 401px;
+  transform: rotate(4deg);
+  border-radius: 30px;
+  left: -25px;
 }
 /*кінець контейнера з картками*/
 
 .motivation-caption {
+  width: 307px;
+  height: 48px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #000;
+  padding-bottom: 40px;
+  position: absolute;
+  z-index: 4;
 }
 .caption-list {
+  position: absolute;
+  z-index: 4;
 }
 .caption-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 16px;
 }
-.caption-text {
+.item-img {
+}
+.caption-text-one {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #000;
+  width: 610px;
+  height: 24px;
+}
+.caption-text-two {
+  width: 580px;
+  height: 47px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #000;
+}
+.caption-text-three {
+  width: 623px;
+  height: 47px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #000;
 }
 .motivation-btn {
 }
