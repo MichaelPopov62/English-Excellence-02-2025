@@ -281,6 +281,20 @@ a {
   text-align: center;
   color: #121417;
   padding-bottom: 16px;
+  position: relative;
+}
+.lessons-title::after {
+  content: ''; /* псевдоєлемент*/
+  display: inline-block;
+  position: absolute;
+  border-radius: 8px;
+  width: 144px;
+  height: 20px;
+  background-color: #bee8cc;
+  bottom: 0;
+  top: 20px;
+  left: 480px;
+  z-index: -1;
 }
 .title-text {
   font-weight: 400;
@@ -356,6 +370,7 @@ a {
   min-height: 950px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 150px;
 }
 .motivation-title {
   font-weight: 700;
@@ -365,12 +380,16 @@ a {
   width: 776px;
   height: 140px;
   padding-bottom: 72px;
+  padding-top: 64px;
 }
 
 /*контейнер з картками*/
 .cards-inner {
   display: flex;
   position: relative;
+  left: 50px;
+  top: 50px;
+  padding: 27px 34px 70px 14px;
 }
 .motivation-cards-center {
   position: absolute;
@@ -402,7 +421,10 @@ a {
   left: -25px;
 }
 /*кінець контейнера з картками*/
-
+.wrapper {
+  position: relative;
+  padding-top: 40px;
+}
 .motivation-caption {
   width: 307px;
   height: 48px;
@@ -414,10 +436,13 @@ a {
   padding-bottom: 40px;
   position: absolute;
   z-index: 4;
+  padding-left: 60px;
 }
 .caption-list {
   position: absolute;
   z-index: 4;
+  padding-left: 60px;
+  top: 150px;
 }
 .caption-item {
   display: flex;
@@ -425,8 +450,7 @@ a {
   gap: 16px;
   padding-bottom: 16px;
 }
-.item-img {
-}
+
 .caption-text-one {
   font-weight: 700;
   font-size: 20px;
@@ -455,4 +479,76 @@ a {
   color: #000;
 }
 .motivation-btn {
+  position: absolute;
+  z-index: 4;
+  top: 350px;
+  border-radius: 12px;
+  padding: 16px 64px;
+  width: 306px;
+  height: 60px;
+  background-color: #4dc274;
+  color: #fff;
+  margin-left: 60px;
+}
+.books-img {
+  position: absolute;
+  z-index: 4;
+  right: 600px;
+  width: 214px;
+  height: 263px;
+  padding-top: 110px;
+  right: 0;
+}
+/* teachers*/
+.teachers {
+}
+.teachers-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #121417;
+  width: 832px;
+  height: 48px;
+}
+.teachers-title-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: center;
+  color: rgba(18, 20, 23, 0.5);
+  width: 709px;
+  height: 60px;
+}
+.teachers-list {
+}
+.teachers-item {
+}
+.teachers-img {
+  border-radius: 500px;
+  width: 150px;
+  height: 150px;
+  background-image: #d4b2af, url(../images/maria.jpg;);
+}
+.wrapper {
+}
+.teachers-subject {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #121417;
+  width: 53px;
+  height: 24px;
+}
+.subject-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: rgba(18, 20, 23, 0.5);
+  width: 232px;
+  height: 123px;
 }
