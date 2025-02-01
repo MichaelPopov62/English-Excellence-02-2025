@@ -421,7 +421,7 @@ a {
   left: -25px;
 }
 /*кінець контейнера з картками*/
-.wrapper {
+.wrapper-motivation {
   position: relative;
   padding-top: 40px;
 }
@@ -436,7 +436,7 @@ a {
   padding-bottom: 40px;
   position: absolute;
   z-index: 4;
-  padding-left: 60px;
+  left: 60px;
 }
 .caption-list {
   position: absolute;
@@ -488,20 +488,21 @@ a {
   height: 60px;
   background-color: #4dc274;
   color: #fff;
-  margin-left: 60px;
+  left: 60px;
 }
 .books-img {
   position: absolute;
   z-index: 4;
-  right: 600px;
   width: 214px;
   height: 263px;
   padding-top: 110px;
-  right: 0;
+  right: -80px;
 }
 /* teachers*/
 .teachers {
+  padding-bottom: 75px;
 }
+
 .teachers-title {
   font-weight: 700;
   font-size: 40px;
@@ -511,6 +512,9 @@ a {
   color: #121417;
   width: 832px;
   height: 48px;
+  padding-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .teachers-title-text {
   font-weight: 400;
@@ -520,10 +524,18 @@ a {
   color: rgba(18, 20, 23, 0.5);
   width: 709px;
   height: 60px;
+  padding-bottom: 64px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .teachers-list {
+  display: flex;
+  gap: 32px;
 }
 .teachers-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .teachers-img {
   border-radius: 500px;
@@ -532,6 +544,9 @@ a {
   background-image: #d4b2af, url(../images/maria.jpg;);
 }
 .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .teachers-subject {
   font-weight: 700;
@@ -551,4 +566,148 @@ a {
   color: rgba(18, 20, 23, 0.5);
   width: 232px;
   height: 123px;
+}
+/* application*/
+.application {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.application-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.application-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #121417;
+  padding-bottom: 16px;
+  width: 832px;
+  min-height: 48px;
+}
+.application-title-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: center;
+  color: rgba(18, 20, 23, 0.5);
+  margin-bottom: 64px;
+  width: 709px;
+  min-height: 60px;
+}
+.application-wrap {
+  display: flex;
+  gap: 32px;
+}
+.application-col {
+  background-color: #4dc274;
+}
+.wrap-application-imges {
+  display: inline-block;
+  width: 492px;
+  height: 578px;
+}
+.application-img {
+  display: block;
+}
+
+.application-icon {
+}
+.images-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 8px;
+  padding-top: 20px;
+}
+
+.images-text {
+  max-width: 452px;
+  min-height: 70px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.application-colomn {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.application-form {
+}
+.application-input {
+  border: 1px solid rgba(18, 20, 23, 0.1);
+  border-radius: 12px;
+  padding: 16px 439px 16px 18px;
+  width: 500px;
+  height: 56px;
+  padding: 10px 10px;
+  margin-bottom: 18px;
+}
+::placeholder {
+  color: #121417;
+}
+.application-taxtarea {
+  border: 1px solid rgba(18, 20, 23, 0.1);
+  border-radius: 12px;
+  padding: 16px 353px 64px 18px;
+  width: 500px;
+  height: 104px;
+  padding: 10px 10px;
+  margin-bottom: 32px;
+}
+.radio-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #121417;
+  padding-bottom: 16px;
+}
+.btn-inner {
+  margin-bottom: 32px;
+}
+.button-radio {
+  width: 76px;
+  height: 23px;
+}
+.user-button {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #121417;
+  padding-left: 8px;
+  padding-right: 16px;
+}
+.form-btn-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.btn {
+  border-radius: 12px;
+  padding: 16px 228px;
+  width: 500px;
+  height: 60px;
+  background-color: #4dc274;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.policy {
+  width: 500px;
+  height: 48px;
 }
