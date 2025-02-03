@@ -134,7 +134,7 @@
           </div>
         </div>
       </section>
-      <section class="lessons">
+      <section class="lessons" id="lessons">
         <div class="container">
           <h2 class="lessons-title">Our lessons</h2>
           <p class="title-text">
@@ -258,7 +258,7 @@
           </div>
         </div>
       </section>
-      <section class="teachers">
+      <section class="teachers" id="team">
         <div class="container">
           <div class="title">
             <h1 class="teachers-title">Meet our teachers</h1>
@@ -355,8 +355,8 @@
                 class="application-img"
                 src="./images/girl-with-headphones.jpg"
                 alt="girl with headphones"
-                width="597"
-                height="537"
+                width="492"
+                height="392"
               />
 
               <h2 class="images-title">1000</h2>
@@ -400,8 +400,9 @@
                   rows="3"
                   required
                 ></textarea>
-                <form class="btn-inner">
+                <div class="grup">
                   <h3 class="radio-title">Choose a teacher</h3>
+
                   <label class="button-radio" for="Maria">
                     <input type="radio" name="radio-Maria" id="Maria" />
                     <span class="user-button">Maria</span>
@@ -418,7 +419,8 @@
                     <input type="radio" name="radio-volodymyr" id="Volodymyr" />
                     <span class="user-button">Volodymyr</span>
                   </label>
-                </form>
+                </div>
+
                 <div class="form-btn-wrapper">
                   <button class="btn" type="submit">Send</button>
                   <p class="policy">
@@ -432,7 +434,152 @@
           </div>
         </div>
       </section>
+      <section class="stydents stories" id="stories">
+        <div class="container">
+          <div class="wrap-title">
+            <h1 class="stories-title">What our students say</h1>
+            <p class="stories-title-text">
+              Hear from our students about their learning journey with us, as
+              they share their experiences, progress, and the transformative
+              impact
+            </p>
+          </div>
+          <ul class="stydent-list">
+            <li class="stydent-item">
+              <div class="student-inner">
+                <img
+                  class="stydent-images"
+                  src="./images/anna.jpg"
+                  width="50"
+                  height="50"
+                  alt="stydent anna"
+                />
+                <div class="subject-col">
+                  <h3 class="subtitle-stydent">Anna</h3>
+                  <span class="subtitle-stydent-text">stydent</span>
+                </div>
+              </div>
+              <p class="stydent-images-text">
+                My experience at the language school has been nothing short of
+                amazing. The teachers are dedicated and the learning environment
+                is stimulating. I feel more confident in my English skills.
+              </p>
+            </li>
+            <li class="stydent-item">
+              <div class="student-inner">
+                <img
+                  class="stydent-images"
+                  src="./images/mykhailo.jpg"
+                  width="50"
+                  height="50"
+                  alt="stydent mykhailo"
+                />
+                <div class="subject-col">
+                  <h3 class="subtitle-stydent">Mykhailo</h3>
+                  <span class="subtitle-stydent-text">stydent</span>
+                </div>
+              </div>
+              <p class="stydent-images-text">
+                The school offers a great balance of language theory and
+                practical exercises. The personalized feedback from the teachers
+                has helped me improve my weak areas.
+              </p>
+            </li>
+            <li class="stydent-item">
+              <div class="student-inner">
+                <img
+                  class="stydent-images"
+                  src="./images/victoria.jpg"
+                  width="50"
+                  height="50"
+                  alt="stydent victoria"
+                />
+                <div class="subject-col">
+                  <h3 class="subtitle-stydent">Victoria</h3>
+                  <span class="subtitle-stydent-text">stydent</span>
+                </div>
+              </div>
+              <p class="stydent-images-text">
+                I love the dynamic and interactive teaching methods used here.
+                It's a great place to learn English in a fun and effective way.
+                I have definitely seen a big improvement in my language skills.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="container">
+        <nav class="footer-adress">
+          <a class="footer logo-footer" href="./index.html"
+            >englishexcellence.</a
+          >
+
+          <p>Phone number:</p>
+          <a class="adress-link" href="tel:+380684439426"
+            >+380 (68) 443-94-26</a
+          >
+          <p>Bazhana ave</p>
+          <a class="adress-link" href="./about">32a M. Bazhana ave</a>
+        </nav>
+        <nav class="footer-nav-link">
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="#reference">About us</a>
+            </li>
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="#lessons">Our lessons</a>
+            </li>
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="#team">Teachers</a>
+            </li>
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="#stories">Reviews</a>
+            </li>
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="/about">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="social-icon">
+          <ul class="social-icon-list">
+            <li class="social-icon-item">
+              <a href="//www.facebook.com">
+                <svg class="social-icon-instagram" width="24" height="24">
+                  <use href="./icons/symbol-defs.svg#icon-Frame-52"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icon-item">
+              <a href="//www.instagram.com">
+                <svg class="social-icon-instagram" width="24" height="24">
+                  <use href="./icons/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icon-item">
+              <a href="//www.youtube.com">
+                <svg class="social-icon-youtube" width="24" height="24">
+                  <use href="./icons/symbol-defs.svg#icon-Frame-60"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="footer-privacy-list">
+          <li class="privacy-item">
+            <a href="../index.html#reserved"
+              >©2023 English Excellence. All rights reserved.</a
+            >
+          </li>
+          <li class="privacy-item">
+            <a href="../index.html#PrivacyPolicy"
+              >Privacy Policy Terms of Service</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

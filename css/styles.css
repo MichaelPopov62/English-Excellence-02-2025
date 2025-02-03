@@ -604,15 +604,28 @@ a {
 }
 .application-col {
   background-color: #4dc274;
+  border-radius: 30px;
 }
-.wrap-application-imges {
-  display: inline-block;
-  width: 492px;
-  height: 578px;
-}
+
 .application-img {
   display: block;
+  width: 492px;
+  height: 392px;
+  border-radius: 30px;
+  fill: #4dc274;
 }
+/* .application-img::after {
+  display: inline-block;
+  content: '';
+  width: 492px;
+  height: 392px;
+  background-color: #4dc274;
+  position: absolute;
+  bottom: 20px;
+
+  left: -20px;
+  z-index: 1;
+} */
 
 .application-icon {
 }
@@ -677,9 +690,10 @@ a {
   color: #121417;
   padding-bottom: 16px;
 }
-.btn-inner {
+.grup {
   margin-bottom: 32px;
 }
+
 .button-radio {
   width: 76px;
   height: 23px;
@@ -710,4 +724,109 @@ a {
 .policy {
   width: 500px;
   height: 48px;
+}
+/*  stydents stories*/
+.stydents {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.wrap-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 64px;
+  position: relative;
+}
+.stories-title::after {
+  display: inline-block;
+  content: '';
+  border-radius: 8px;
+  width: 169px;
+  height: 20px;
+  background-color: #bee8cc;
+  position: absolute;
+  top: 30px;
+  right: 372px;
+  z-index: -1;
+}
+.stories-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #121417;
+  width: 842px;
+  height: 46px;
+  padding-bottom: 16px;
+}
+.stories-title-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.7;
+  text-align: center;
+  color: rgba(18, 20, 23, 0.5);
+  width: 647px;
+  height: 60px;
+}
+.stydent-list {
+  display: flex;
+  gap: 32px;
+}
+.stydent-item {
+  border-radius: 30px;
+  width: 320px;
+  height: 326px;
+  background-color: #f3f5f6;
+}
+.student-inner {
+  border-radius: 15px;
+  width: 288px;
+  height: 78px;
+  background-color: #4dc274;
+  display: flex;
+  align-items: center;
+  padding-left: 32px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+.stydent-images {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.subject-col {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.subtitle-stydent {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+.subtitle-stydent-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3;
+  color: rgba(255, 255, 255, 0.5);
+}
+.stydent-images-text {
+  width: 266px;
+  height: 144px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(18, 20, 23, 0.5);
+  padding-left: 32px;
+  padding-right: 32px;
+}
+/* footer*/
+.footer {
+  padding-top: 75px;
 }
