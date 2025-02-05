@@ -390,6 +390,9 @@ a {
   height: 148px;
 }
 .button-subtitle {
+  display: inline-block;
+  white-space: nowrap;
+  text-align: center;
   border-radius: 12px;
   background-color: #4dc274;
   font-weight: 700;
@@ -399,7 +402,6 @@ a {
   margin-left: 32px;
   margin-right: 32px;
   border: 1px solid rgba(255, 255, 255, 0.4);
-  padding: 16px 39px;
   width: 256px;
   height: 60px;
   cursor: pointer;
@@ -530,7 +532,6 @@ a {
   z-index: 4;
   top: 350px;
   border-radius: 12px;
-  padding: 16px 64px;
   width: 306px;
   height: 60px;
   background-color: #4dc274;
