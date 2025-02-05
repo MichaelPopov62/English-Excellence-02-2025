@@ -314,6 +314,15 @@ a {
   width: 320px;
   height: 404px;
 }
+.lessons-list > .lessons-item:nth-child(2) {
+  background-color: #4dc274; /*цвет фона*/
+}
+.lessons-list .lessons-item:nth-child(2) .lessons-caption,
+.lessons-list .lessons-item:nth-child(2) .lessons-subtitle,
+.lessons-list .lessons-item:nth-child(2) .subtitle-text,
+.lessons-list .lessons-item:nth-child(2) .button-subtitle {
+  color: white; /* Белый цвет текста для всех внутренних элементов */
+}
 .lessons-caption {
   font-weight: 700;
   font-size: 20px;
@@ -324,6 +333,7 @@ a {
   padding-top: 32px;
   padding-bottom: 16px;
 }
+
 .lessons-subtitle {
   font-weight: 700;
   font-size: 32px;
@@ -587,7 +597,21 @@ a {
   padding-bottom: 16px;
   width: 832px;
   min-height: 48px;
+  position: relative;
 }
+.application-title::before {
+  display: inline-block;
+  content: '';
+  width: 208px;
+  height: 20px;
+  border-radius: 8px;
+  background-color: #bee8cc;
+  position: absolute;
+  bottom: 15px;
+  right: 225px;
+  z-index: -1;
+}
+
 .application-title-text {
   font-weight: 400;
   font-size: 18px;
@@ -829,4 +853,93 @@ a {
 /* footer*/
 .footer {
   padding-top: 75px;
+  background-color: #121417;
+  margin-bottom: 100px;
+}
+.footer-adress {
+  padding-top: 64px;
+  margin-bottom: 79px;
+}
+.logo-footer {
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  padding-bottom: 32px;
+}
+.logo-footer-text {
+  color: #4dc274;
+}
+.adress-war {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.adress-link-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.6);
+  opacity: 0.9;
+  padding-bottom: 4px;
+}
+.adress-link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #fff;
+  padding-bottom: 16px;
+}
+.footer-nav {
+  padding-top: 64px;
+  margin-bottom: 64px;
+}
+.footer-nav-list {
+}
+.footer-nav-item {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.3;
+  padding-bottom: 20px;
+}
+.footer-nav-link {
+  color: #fff;
+}
+.social-footer-link {
+  fill: #fff;
+}
+
+.social-icon-list {
+  display: flex;
+  gap: 12px;
+}
+.social-icon-item {
+  padding-top: 64px;
+  margin-bottom: 190px;
+}
+.social-icon-instagram {
+}
+.social-icon-youtube {
+}
+.images-separator {
+  display: block;
+  stroke-width: 1px;
+  stroke: rgba(255, 255, 255, 1);
+  margin-bottom: 23px;
+}
+.footer-privacy-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.privacy-item {
+  padding-bottom: 23px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+}
+.privacy-link {
+  color: rgba(255, 255, 255, 0.6);
+  opacity: 0.9;
 }
