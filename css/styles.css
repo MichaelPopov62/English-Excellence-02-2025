@@ -34,7 +34,10 @@ a {
 /*common*/
 .container {
   max-width: 1024px;
-  padding: 0 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 55px;
+  padding-right: 73px;
   margin: 0 auto;
 }
 
@@ -696,7 +699,6 @@ a {
 .thumb {
   width: 492px;
   height: auto;
-  position: relative;
 }
 
 .application-img {
@@ -704,6 +706,8 @@ a {
   fill: #4dc274;
   outline: transparent;
   transform: translate(-60px, -100px);
+  object-fit: cover;
+  object-position: left 90px;
 }
 /* .application-img::after {
   display: inline-block;
@@ -843,7 +847,6 @@ a {
   font-size: 18px;
   line-height: 1.6;
   cursor: pointer;
-  outline: transparent;
   border: none;
 }
 .policy {
