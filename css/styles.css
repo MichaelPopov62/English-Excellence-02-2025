@@ -57,6 +57,8 @@ a {
   font-weight: 700;
   font-size: 20px;
   color: #121417;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .header-logo {
   padding-top: 28.5px;
@@ -79,11 +81,17 @@ a {
   gap: 20px;
   align-items: center;
 }
+.nav-item {
+  display: inline-block;
+  cursor: pointer;
+  padding-bottom: 13px;
+  padding-top: 13px;
+}
 
 .nav-link {
   display: block;
-  padding-bottom: 13px;
-  padding-top: 13px;
+  /* padding-bottom: 13px;
+  padding-top: 13px; */
 
   font-weight: 600;
   font-size: 14px;
@@ -673,18 +681,29 @@ a {
 .application-wrap {
   display: flex;
   gap: 32px;
+  align-items: flex-start;
 }
 .application-col {
   background-color: #4dc274;
   border-radius: 30px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-width: 492px;
+  min-height: 578px;
+}
+.thumb {
+  width: 492px;
+  height: auto;
+  position: relative;
 }
 
 .application-img {
-  display: block;
-  width: 492px;
-  height: 392px;
-  border-radius: 30px;
+  border-radius: 100%;
   fill: #4dc274;
+  outline: transparent;
+  transform: translate(-60px, -100px);
 }
 /* .application-img::after {
   display: inline-block;
@@ -708,21 +727,25 @@ a {
   letter-spacing: -0.02em;
   text-align: center;
   color: #fff;
-  padding-bottom: 8px;
-  padding-top: 20px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  transform: translateY(-28px);
+}
+.wrap-text {
+  margin-top: auto;
 }
 
 .images-text {
-  max-width: 452px;
-  min-height: 70px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
   color: rgba(255, 255, 255, 0.7);
-  padding-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 452px;
+  height: 70px;
+  padding-top: 8px;
+  transform: translateY(-20px);
 }
 .application-colomn {
   display: flex;
@@ -743,7 +766,8 @@ a {
   margin-bottom: 18px;
   outline: transparent;
 }
-.application-input:focus {
+.application-input:focus,
+.application-input:hover {
   border-color: rgba(40, 225, 7, 0.62);
 }
 
@@ -764,7 +788,8 @@ a {
   margin-bottom: 32px;
   outline: transparent;
 }
-.application-taxtarea:focus {
+.application-taxtarea:focus,
+.application-taxtarea:hover {
   border-color: rgba(40, 225, 7, 0.62);
 }
 .application-taxtarea::placeholder {
@@ -789,6 +814,7 @@ a {
 .button-radio {
   width: 76px;
   height: 23px;
+  cursor: pointer;
 }
 .user-button {
   font-weight: 400;
@@ -803,6 +829,7 @@ a {
 .form-btn-wrapper {
   display: flex;
   flex-direction: column;
+  margin-bottom: 16px;
 }
 .btn {
   border-radius: 12px;
@@ -815,6 +842,9 @@ a {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.6;
+  cursor: pointer;
+  outline: transparent;
+  border: none;
 }
 .policy {
   width: 500px;
@@ -988,15 +1018,21 @@ a {
   padding-top: 64px;
   margin-bottom: 190px;
 }
-.social-icon-instagram {
+.social-icon-instagram:hover {
+  fill: #4dc274;
 }
-.social-icon-youtube {
+.social-icon-youtube:hover {
+  fill: #4dc274;
+}
+.social-icon-facebook:hover {
+  fill: #4dc274;
 }
 .images-separator {
   display: block;
   stroke-width: 1px;
-  stroke: rgba(255, 255, 255, 1);
+  stroke: rgba(255, 255, 255, 0.1);
   margin-bottom: 23px;
+  width: 100%;
 }
 .footer-privacy-list {
   display: flex;
