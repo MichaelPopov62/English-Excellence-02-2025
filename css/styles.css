@@ -33,18 +33,19 @@ a {
 
 /*common*/
 .container {
-  max-width: 1024px;
-  padding-top: 0;
-  padding-bottom: 0;
+  max-width: 1148px;
   padding-left: 55px;
-  padding-right: 73px;
+  padding-right: 69px;
   margin: 0 auto;
+}
+.hidden {
+  display: none;
 }
 
 /*heder*/
 
 .page-header {
-  padding: 20px 128px;
+  padding-bottom: 22px;
 }
 .header-container {
   display: flex;
@@ -138,6 +139,50 @@ a {
   stroke: #111;
 } */
 
+/*mobile menu*/
+.modile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4dc274;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media only screen and (min-width: 1152px) {
+  .modile-menu {
+    display: none;
+  }
+}
+.modile-menu.is-open {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+.mobile-menu-container {
+}
+.modile-btn {
+}
+.mobile-icon {
+}
+.mobil-nav {
+}
+.mobile-nav-list {
+}
+.mobile-nav-item {
+}
+.mobile-social-list {
+}
+.mobile-social-item {
+}
+.social-icon {
+}
+.social-icon-facebook {
+}
+
 /*hero*/
 .hero {
   background-image: linear-gradient(
@@ -154,7 +199,7 @@ a {
   margin-right: auto;
   border-radius: 30px;
   position: relative;
-  margin-bottom: 90px;
+  padding-bottom: 169px;
 }
 
 .hero-title {
@@ -163,13 +208,14 @@ a {
   line-height: 1.2;
   color: #fff;
   width: 564px;
-  padding-top: 168px;
-  padding-right: 528px;
-
+  padding-top: 158px;
   padding-left: 60px;
-  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 12px;
   padding: 16px 0px;
   text-align: center;
@@ -180,7 +226,7 @@ a {
   font-size: 18px;
   line-height: 1.6;
   color: #fff;
-  margin-bottom: 169px;
+
   margin-left: 60px;
   cursor: pointer;
 }
@@ -209,13 +255,13 @@ a {
   position: absolute;
   display: inline-block;
   top: 27px; /* Позиционируем изображение по вертикали */
-  left: 24px; /* Позиционируем изображение по горизонтали */
+  left: 22px; /* Позиционируем изображение по горизонтали */
   transform: translate(
     -50%,
     -50%
   ); /* Корректируем положение, чтобы центр совпал с центром кнопки */
   width: 24px;
-  height: 24px;
+  height: 22px;
   stroke: #4dc274;
 }
 .icon-cek:hover {
@@ -226,11 +272,11 @@ a {
 /* reference */
 
 .reference {
-  padding-bottom: 150px;
+  padding-top: 96px;
+  padding-bottom: 75px;
 }
 .reference-title-wrapper {
   position: relative;
-  margin-bottom: 64px;
 }
 .reference-title {
   font-weight: 700;
@@ -243,7 +289,8 @@ a {
   margin-right: auto;
   padding-bottom: 16px;
 }
-.title-text {
+
+.reference-title-text {
   font-weight: 400;
   font-size: 18px;
   line-height: 167%;
@@ -253,6 +300,7 @@ a {
   height: 60px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 64px;
 }
 .reference-title-wrapper::after {
   content: ''; /* як відобразити фігуру */
@@ -276,7 +324,6 @@ a {
   width: calc((100% - 32px) / 2);
   border-radius: 30px;
   color: #f3f5f6;
-  padding-bottom: 16px;
 }
 .about-caption {
   font-weight: 700;
@@ -286,7 +333,8 @@ a {
   color: #4dc274;
   width: 35px;
   height: 32px;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
+  margin-top: 32px;
 }
 .caption-text {
   font-weight: 700;
@@ -298,25 +346,32 @@ a {
   height: 48px;
   padding-bottom: 32px;
 }
+.about-item:not(:last-child) {
+  margin-bottom: 32px;
+} /* применение стиля для последнего элемента*/
+.about-item:nth-last-child(2) {
+  margin-bottom: 0px;
+} /* применение стиля для предпоследнего элемента*/
 .wrap {
   display: inline-flex;
   gap: 32px;
 }
-.thumb {
+.reference-thumb {
   width: 310px;
-  height: 352px;
+  height: auto;
 }
 .thumb-images {
   display: block;
   object-fit: none;
   border-radius: 30px;
   background-color: #4dc274;
-  padding: 70px 28px;
+  padding: 71px 28px;
 }
 
 /*lessons*/
 .lessons {
-  padding-bottom: 150px;
+  padding-bottom: 75px;
+  padding-top: 75px;
 }
 .lessons-title {
   font-weight: 700;
@@ -395,7 +450,7 @@ a {
   text-align: center;
   color: rgba(18, 20, 23, 0.5);
   padding-bottom: 32px;
-  padding-left: 32px;
+  padding-right: 32px;
   padding-left: 32px;
   width: 256px;
   height: 148px;
@@ -410,6 +465,7 @@ a {
   font-size: 18px;
   line-height: 156%;
   color: #fff;
+  margin-bottom: 32px;
   margin-left: 32px;
   margin-right: 32px;
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -430,7 +486,8 @@ a {
   min-height: 950px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 150px;
+  margin-top: 75px;
+  margin-bottom: 75px;
 }
 .motivation-title {
   font-weight: 700;
@@ -570,6 +627,7 @@ a {
 /* teachers*/
 .teachers {
   padding-bottom: 75px;
+  padding-top: 75px;
 }
 
 .teachers-title {
@@ -593,7 +651,7 @@ a {
   color: rgba(18, 20, 23, 0.5);
   width: 709px;
   height: 60px;
-  padding-bottom: 64px;
+  margin-bottom: 64px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -611,6 +669,9 @@ a {
   width: 150px;
   height: 150px;
   background-image: #d4b2af, url(../images/maria.jpg;);
+  padding-bottom: 16px;
+  padding-left: 41px;
+  padding-right: 41px;
 }
 .wrapper {
   display: flex;
@@ -624,9 +685,12 @@ a {
   letter-spacing: -0.02em;
   text-align: center;
   color: #121417;
-  width: 53px;
+  width: 100px;
   height: 24px;
 }
+.teachers-subject:not(:first-child) {
+  width: 53px;
+} /* применение своего стиля для последненго элемента*/
 .subject-text {
   font-weight: 400;
   font-size: 16px;
@@ -645,6 +709,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 64px;
 }
 .application-title {
   font-weight: 700;
@@ -677,7 +742,6 @@ a {
   line-height: 1.7;
   text-align: center;
   color: rgba(18, 20, 23, 0.5);
-  margin-bottom: 64px;
   width: 709px;
   min-height: 60px;
 }
@@ -737,7 +801,7 @@ a {
   transform: translateY(-28px);
 }
 .wrap-text {
-  margin-top: auto;
+  margin-top: -50px;
 }
 
 .images-text {
@@ -750,6 +814,7 @@ a {
   height: 70px;
   padding-top: 8px;
   transform: translateY(-20px);
+  padding-bottom: 40px;
 }
 .application-colomn {
   display: flex;
@@ -761,6 +826,7 @@ a {
 .application-form {
 }
 .application-input {
+  display: inline-block;
   border: 1px solid rgba(18, 20, 23, 0.1);
   border-radius: 12px;
   padding: 16px 439px 16px 18px;
@@ -791,6 +857,7 @@ a {
   padding: 10px 10px;
   margin-bottom: 32px;
   outline: transparent;
+  resize: none;
 }
 .application-taxtarea:focus,
 .application-taxtarea:hover {
@@ -833,7 +900,6 @@ a {
 .form-btn-wrapper {
   display: flex;
   flex-direction: column;
-  margin-bottom: 16px;
 }
 .btn {
   border-radius: 12px;
@@ -901,17 +967,16 @@ a {
 .stydent-list {
   display: flex;
   gap: 32px;
+  justify-content: center;
 }
 .stydent-item {
   border-radius: 30px;
-  width: 320px;
-  height: 326px;
+
   background-color: #f3f5f6;
 }
 .student-inner {
   border-radius: 15px;
-  width: 288px;
-  height: 78px;
+
   background-color: #4dc274;
   display: flex;
   align-items: center;
@@ -919,7 +984,6 @@ a {
   padding-top: 14px;
   padding-bottom: 14px;
   margin-bottom: 32px;
-  margin-top: 32px;
 }
 .stydent-images {
   width: 50px;
@@ -953,6 +1017,7 @@ a {
   color: rgba(18, 20, 23, 0.5);
   padding-left: 32px;
   padding-right: 32px;
+  padding-bottom: 40px;
 }
 /* footer*/
 .footer {
@@ -1053,3 +1118,4 @@ a {
   color: rgba(255, 255, 255, 0.6);
   opacity: 0.9;
 }
+/*modal-window*/

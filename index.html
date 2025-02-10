@@ -75,10 +75,57 @@
         </ul>
         <!-- </div> -->
       </div>
+
+
+
+      <!-- modal window -->
+
+
+      <div class="modile-menu">
+        <div class="container mobile-menu-container">
+          <button class="modile-btn">
+            <svg class="mobile-icon" width="32" height="32">
+              <use href="./images/cross.png"></use>
+            </svg>
+          </button>
+          <nav class="mobil-nav" >
+            <ul class="mobile-nav-list">
+              <li class="mobile-nav-item">About us</li>
+              <li class="mobile-nav-item">Our lessons</li>
+              <li class="mobile-nav-item">Teachers</li>
+              <li class="mobile-nav-item">Reviews</li>
+              <li class="mobile-nav-item">Contact us</li>
+            </ul>
+          </nav>
+          <ul class="mobile-social-list">
+            <li class="mobile-social-item">
+              <a class="social-icon" href="//www.facebook.com">
+                <svg class="social-icon-facebook" width="24" height="24">
+                  <use href="./icons/symbol-defs.svg#icon-Frame-52"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a class="social-icon" href="//www.facebook.com">
+                <svg class="social-icon-facebook" width="24" height="24">
+                  <use href="./icons/symbol-defs.svg#icon-Frame-52"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social-item">
+              <a class="social-icon" href="//www.facebook.com">
+                <svg class="social-icon-facebook" width="24" height="24">
+                  <use href="./icons/symbol-defs.svg#icon-Frame-52"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <main>
-      <section class="hero" id="hero">
+      <section class="hero hidden" id="hero">
         <div class="container">
           <h1 class="hero-title">
             Discover the joy of learning English with us!
@@ -86,17 +133,17 @@
           <button class="button">Leave an application</button>
           <button class="button-icon-cek">
             <svg class="icon-cek" width="7" height="14">
-              <use href="./icons/symbol-defs.svg#icon-cek"></use>
+              <use href="./icons/symbol-defs.svg#button-cek"></use>
             </svg>
           </button>
         </div>
       </section>
-      <section class="reference" id="reference">
+      <section class="reference hidden" id="reference">
         <div class="container">
           <div class="reference-title-wrapper">
             <h2 class="reference-title">About Us</h2>
 
-            <p class="title-text">
+            <p class="reference-title-text">
               We are dedicated to providing engaging and effective English
               language courses in a supportive and stimulating learning
               environment
@@ -125,7 +172,7 @@
                 </p>
               </li>
             </ul>
-            <div class="thumb">
+            <div class="reference-thumb">
               <img
                 class="thumb-images"
                 src="./images/memoji.png"
@@ -137,7 +184,7 @@
           </div>
         </div>
       </section>
-      <section class="lessons" id="lessons">
+      <section class="lessons hidden" id="lessons">
         <div class="container">
           <h2 class="lessons-title">Our lessons</h2>
           <p class="title-text">
@@ -180,7 +227,7 @@
           </ul>
         </div>
       </section>
-      <section class="motivation">
+      <section class="motivation hidden">
         <div class="container">
           <h1 class="motivation-title">
             Master the Language with Our English Package!
@@ -261,7 +308,7 @@
           </div>
         </div>
       </section>
-      <section class="teachers" id="team">
+      <section class="teachers hidden" id="team">
         <div class="container">
           <div class="title">
             <h1 class="teachers-title">Meet our teachers</h1>
@@ -343,7 +390,7 @@
           </ul>
         </div>
       </section>
-      <section class="application">
+      <section class="application hidden">
         <div class="container">
           <div class="application-wrapper">
             <h1 class="application-title">Leave an application</h1>
@@ -440,7 +487,7 @@
           </div>
         </div>
       </section>
-      <section class="stydents stories" id="stories">
+      <section class="stydents stories hidden" id="stories">
         <div class="container">
           <div class="wrap-title">
             <h1 class="stories-title">What our students say</h1>
@@ -514,109 +561,5 @@
           </ul>
         </div>
       </section>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="adress-war">
-          <nav class="footer-adress">
-            <a class="logo-footer" href="./index.html"
-              >english<span class="logo-footer-text">excellence.</span></a
-            >
-
-            <p class="adress-link-text">Phone number:</p>
-            <a class="adress-link" href="tel:+380684439426"
-              >+380 (68) 443-94-26</a
-            >
-            <p class="adress-link-text">Bazhana ave</p>
-            <a class="adress-link" href="./about">32a M. Bazhana ave</a>
-          </nav>
-
-          <nav class="footer-nav">
-            <ul class="footer-nav-list">
-              <li class="footer-nav-item">
-                <a class="footer-nav-link" href="#reference">About us</a>
-              </li>
-              <li class="footer-nav-item">
-                <a class="footer-nav-link" href="#lessons">Our lessons</a>
-              </li>
-              <li class="footer-nav-item">
-                <a class="footer-nav-link" href="#team">Teachers</a>
-              </li>
-              <li class="footer-nav-item">
-                <a class="footer-nav-link" href="#stories">Reviews</a>
-              </li>
-              <li class="footer-nav-item">
-                <a class="footer-nav-link" href="/about">Contact us</a>
-              </li>
-            </ul>
-          </nav>
-
-          <nav class="social-icon">
-            <ul class="social-icon-list">
-              <li class="social-icon-item">
-                <a
-                  class="social-footer-link"
-                  href="//www.facebook.com"
-                  target="_blank"
-                  title="facebook"
-                >
-                  <svg class="social-icon-facebook" width="24" height="24">
-                    <use href="./icons/symbol-defs.svg#icon-Frame-52"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-icon-item">
-                <a
-                  class="social-footer-link"
-                  href="//www.instagram.com"
-                  target="_blank"
-                  title="instagram"
-                >
-                  <svg class="social-icon-instagram" width="24" height="24">
-                    <use href="./icons/symbol-defs.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-icon-item">
-                <a
-                  class="social-footer-link"
-                  href="//www.youtube.com"
-                  target="_blank"
-                  title="youtube"
-                >
-                  <svg
-                    class="social-icon-youtube"
-                    target_blank
-                    width="24"
-                    height="24"
-                  >
-                    <use href="./icons/symbol-defs.svg#icon-Frame-60"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <img
-          class="images-separator"
-          src="./images/line.png"
-          width="1024"
-          height="1"
-          alt="separator"
-        />
-        <ul class="footer-privacy-list">
-          <li class="privacy-item">
-            <a class="privacy-link" href="../index.html#reserved"
-              >©2023 English Excellence. All rights reserved.</a
-            >
-          </li>
-          <li class="privacy-item">
-            <a class="privacy-link" href="../index.html#PrivacyPolicy"
-              >Privacy Policy Terms of Service</a
-            >
-          </li>
-        </ul>
-      </div>
-    </footer>
-  </body>
+    </main> 
 </html>
